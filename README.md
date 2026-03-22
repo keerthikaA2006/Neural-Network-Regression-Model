@@ -94,7 +94,7 @@ def train_model(sai_brain,x_train,y_train,criteria,optmizer,epochs=4000):
 
 ```
 ## Dataset Information
-<img width="352" height="394" alt="Screenshot 2026-02-10 153210" src="https://github.com/user-attachments/assets/c00b9bbc-6c31-480f-98ce-1d494b314741" />
+<img width="408" height="809" alt="image" src="https://github.com/user-attachments/assets/cd24e274-64f4-4a21-b3b5-b7c7b704e7b5" />
 
 
 ## OUTPUT
