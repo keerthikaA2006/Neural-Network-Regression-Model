@@ -75,18 +75,18 @@ class Neuralnet(nn.Module):
         return x
 
 # Initialize the Model, Loss Function, and Optimizer
-sai_brain=Neuralnet()
+ai_brain=Neuralnet()
 criteria=nn.MSELoss()
 optimizer=optim.RMSprop(sai_brain.parameters(),lr=0.001)
 
-def train_model(sai_brain,x_train,y_train,criteria,optmizer,epochs=4000):
+def train_model(ai_brain,x_train,y_train,criteria,optmizer,epochs=4000):
     for i in range(epochs):
         optimizer.zero_grad()
-        loss=criteria(sai_brain(x_train),y_train)
+        loss=criteria(ai_brain(x_train),y_train)
         loss.backward()
         optimizer.step()
         
-        sai_brain.history['loss'].append(loss.item())
+        ai_brain.history['loss'].append(loss.item())
         if i%200==0:
             print(f"Epoch [{i}/epochs], loss: {loss.item():.6f}")
 
